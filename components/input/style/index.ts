@@ -406,7 +406,7 @@ export const genInputGroupStyle = (token: InputToken): CSSObject => {
       },
 
       '& > *': {
-        display: 'inline-flex',
+        display: 'inline-block',
         float: 'none',
         verticalAlign: 'top', // https://github.com/ant-design/ant-design-pro/issues/139
         borderRadius: 0,
@@ -620,6 +620,7 @@ const genAffixStyle: GenerateStyle<InputToken> = (token: InputToken) => {
       },
 
       '&::before': {
+        display: 'inline-block',
         width: 0,
         visibility: 'hidden',
         content: '"\\a0"',
